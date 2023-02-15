@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Rubik:wght@400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: Rubik, sans-serif;
+}
+body{
+  background: #EFefef33;
+}
+.container{
+  max-width: 1196px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+@mixin text ($fw, $fs, $lh ) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+}
+.orange {
+  color: #FF7A50;
+}
+$orange: #FF7A50;
+
+
+
+.title{
+  @include text(500, 36px, 43px);
+  text-transform: capitalize;
+  color: #363853;
+  text-align: center;
+
+
+}
+
+.explore{
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #363853;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  &__popup{
+    width: 400px;
+    height: 500px;
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    &__img{
+      width: 100%;
+
+    }
+
+  }
+}
+
+
+
+
+
+
+
+
+@import "header";
+@import "fast";
+@import "category";
+@import "stay";
+@import "app";
+@import "food";
+@import "client";
+@import "subscribe";

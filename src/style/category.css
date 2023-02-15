@@ -1,0 +1,17 @@
+.category {
+  padding-bottom: 87px;
+}
+.category__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 26px;
+     -moz-column-gap: 26px;
+          column-gap: 26px;
+}
+.category__tab {
+  width: 20%;
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding: 14px 47px;
+}
